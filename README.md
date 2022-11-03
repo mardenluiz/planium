@@ -9,6 +9,9 @@ Técnologias utilizadas -
     - Jquery
 
 Para iniciar o back-end, entre na pasta /api-planium e execute o comando "php artisan serve".
+
 Toda lógica da aplicação esta centralizada no diretório "app/Service".
+
 Aplicação falta alguns ajustes pois faltou tempo.
+
 
