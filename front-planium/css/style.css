@@ -1,0 +1,12 @@
+.pricing ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 35px;
+}
+
+.pricing h3, h5 {
+    color: #444444;
+    text-align: center;
+}

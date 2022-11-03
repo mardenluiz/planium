@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="" onload="getPlans()">
+  <header class="bg-dark">
+    <h5 class="p-1 text-light">Planos <span class="text-primary"><strong>Planium</strong><span></h4>
+  </header>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <div class="card m-5">
+          <div class="card-body">
+            <h2 class="text-dark m-2">Cadastro de plano de saúde</h2>
+              <section id="appointment" class="appointment section-bg">
+                <form>
+                <div class="form-group col-md-7">
+                  <label for="exampleFormControlSelect">Lista de planos de saúde</label>
+                  <select class="form-control" id="formControlSelect" onchange="getPrice()">
+                      <option value=""></option>
+                  </select>
+                </div>
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                  
+                  <div class="row" id="showPlans"></div>
+
+                    <div class="row">
+                      <div class="col-md-5 form-group">
+                        <input type="number" name="amountBeneficiaries" class="form-control" id="amountBeneficiaries" placeholder="Nuemro de beneficiários" required="">
+                      </div>
+                      <div class="col-md-5 form-group">
+                        <input type="button" class="btn btn-success" value="Adicionar" onclick="add()">
+                      </div>
+                    </div>
+
+                    <div id="addBeneficiaries"></div>
+
+                    <div class="text-center">
+                      <button class="btn btn-primary" onclick="btnClick()" type="button">Enviar</button>
+                    </div>
+                  </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </di>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./css/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
